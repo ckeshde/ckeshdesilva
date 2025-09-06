@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Keshani de Silva | Front end developer & UI/UX designer</title>
-  
+
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- Custom CSS -->
   <link href="css/style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poetsen+One&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 </head>
+
 <body class="bg-white text-gray-800">
 
   <!-- Navbar -->
@@ -27,12 +34,35 @@
     </div>
   </nav>
 
+
+
   <!-- Hero Section -->
-  <section id="hero" class="h-screen flex flex-col justify-center items-center text-center px-6">
-    <h2 class="text-4xl md:text-6xl font-bold mb-4">Hi, I’m <span class="text-blue-500">Keshani</span></h2>
-    <p class="text-lg md:text-xl text-gray-600 mb-6">Frontend Developer | UI/UX Designer | Problem Solver</p>
-    <a href="#projects" class="px-6 py-3 bg-blue-500 text-white rounded-lg shadow hover:bg-blue-600 transition">View My Work</a>
+  <section id="hero" class="h-screen flex flex-col justify-center items-center text-center px-6 bg-[#ffffff]">
+    <h1 class="text-3xl md:text-5xl lg:text-6xl font-extrabold text-gray-800 leading-snug max-w-5xl font-Quicksand">
+      Hi, I’m <span class="text-[#de0f66]">Keshani</span> 👋 <br>
+      A frontend developer and UI/UX designer crafting modern, user-friendly digital experiences
+    </h1>
+
+
+
+
+    <!-- Buttons -->
+    <div class="mt-20 flex flex-col sm:flex-row gap-6">
+      <a href="#projects"
+        class="inline-block rounded-full bg-gradient-to-r from-[#de0f66] to-blue-600 px-8 py-4 text-lg text-white font-medium shadow hover:opacity-90 transition">
+        View My Work
+      </a>
+      <a href="#about" class="relative inline-block rounded-full bg-gradient-to-r from-[#de0f66] to-blue-600 p-[2px]">
+        <span
+          class="block rounded-full bg-white px-8 py-4 text-lg text-gray-800 font-medium hover:bg-gray-50 transition">
+          About me
+        </span>
+      </a>
+
+    </div>
   </section>
+
+
 
   <!-- Projects Section -->
   <section id="projects" class="py-20 bg-gray-50">
@@ -93,7 +123,9 @@
     <div class="container mx-auto px-6 text-center md:text-left md:flex items-center gap-12">
       <div class="flex-1">
         <h3 class="text-3xl font-bold mb-6">About Me</h3>
-        <p class="text-gray-600 leading-relaxed">I’m a passionate frontend developer and UI/UX designer with experience building modern, responsive web applications. I love solving problems and creating seamless user experiences.</p>
+        <p class="text-gray-600 leading-relaxed">I’m a passionate frontend developer and UI/UX designer with experience
+          building modern, responsive web applications. I love solving problems and creating seamless user experiences.
+        </p>
       </div>
       <div class="flex-1">
         <div class="w-64 h-64 bg-gray-200 rounded-full mx-auto md:mx-0"></div>
@@ -115,4 +147,5 @@
   </footer>
 
 </body>
+
 </html>
