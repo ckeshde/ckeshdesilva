@@ -82,7 +82,7 @@
 
 
   <!-- Projects Section -->
-  <section id="projects" class="py-20 bg-gray-50">
+  <section id="projects" class="py-20 bg-[#fcebf0]">
     <div class="container mx-auto px-6">
       <h3 class="text-3xl font-bold text-center mb-12">Projects</h3>
       <div class="flex flex-col gap-8 items-center">
@@ -315,29 +315,50 @@
 
 
   <!-- About Me -->
-<section id="about" class="py-20 bg-gray-50">
+<section id="about" class="py-20 bg-[#fcebf0]">
   <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12 text-center md:text-left">
-    
+
     <!-- Image / Avatar -->
-    <div class="flex-1 flex justify-center">
-      <div class="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden shadow-lg ring-4 ring-gray-200 hover:ring-purple-400 transition">
+    <div class="flex-1 flex justify-center relative">
+      <!-- Gradient Background Square -->
+      <div class="absolute w-56 h-56 md:w-80 md:h-80 bg-gradient-to-r from-[#de0f66] to-blue-600 rounded-xl transform rotate-6"></div>
+      
+      <!-- Profile Image Square -->
+      <div class="relative w-56 h-56 md:w-80 md:h-80 rounded-xl overflow-hidden shadow-xl">
         <img src="./images/DP.JPG" alt="Your Photo" class="w-full h-full object-cover">
       </div>
     </div>
-    
+
     <!-- Text Content -->
     <div class="flex-1">
       <h3 class="text-3xl md:text-4xl font-bold mb-6">About Me</h3>
       <p class="text-gray-600 leading-relaxed max-w-xl mx-auto md:mx-0">
-        I’m a passionate <span class="font-semibold text-purple-500">frontend developer</span> 
-        and <span class="font-semibold text-blue-500">UI/UX designer</span> with experience
-        building modern, responsive web applications. I love solving problems and creating
-        seamless user experiences that delight users.
+        I’m a <span class="font-semibold text-[#de0f66]">frontend developer</span> and 
+        <span class="font-semibold text-blue-600">UI/UX designer</span> with over 
+        <span class="font-semibold">5 years of industry experience</span> creating modern, 
+        responsive, and user-friendly digital products. My expertise spans from building 
+        pixel-perfect web interfaces with clean code to designing intuitive user journeys 
+        that balance both aesthetics and functionality.
+      </p>
+      <p class="text-gray-600 leading-relaxed max-w-xl mx-auto md:mx-0 mt-4">
+        Over the years, I’ve worked on projects ranging from startup websites to 
+        enterprise-level applications, collaborating closely with cross-functional teams 
+        to turn ideas into impactful solutions. I’m passionate about crafting experiences 
+        that not only <em>look good</em> but also <em>solve real problems</em> for users.
+      </p>
+      <p class="text-gray-600 leading-relaxed max-w-xl mx-auto md:mx-0 mt-4">
+        Currently based in <span class="font-semibold">Melbourne</span>, I enjoy 
+        working in dynamic environments where creativity and technology meet. Outside of 
+        work, I stay curious by exploring new design trends, experimenting with emerging 
+        frameworks, and continuously sharpening my skills.
       </p>
     </div>
 
   </div>
 </section>
+
+
+
 
 
 <!-- Footer -->
