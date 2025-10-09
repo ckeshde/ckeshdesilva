@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project 1 | My Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#fcebf0] text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="fixed w-full bg-white shadow-md z-50">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <a href="index.html" class="text-2xl font-bold text-[#de0f66]">MyPortfolio</a>
+      <ul class="hidden md:flex space-x-6 font-medium">
+        <li><a href="index.html#projects" class="hover:text-[#de0f66]">Projects</a></li>
+        <li><a href="index.html#skills" class="hover:text-[#de0f66]">Skills</a></li>
+        <li><a href="index.html#contact" class="hover:text-[#de0f66]">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero / Banner -->
+  <section class="pt-32 pb-16 bg-white">
+    <div class="container mx-auto px-6 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Message Scheduling Feature for WhatsApp</h1>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+        A UX/UI design project where I conceptualized and prototyped a new feature for WhatsApp Messenger, 
+        enabling users to schedule messages with ease.
+      </p>
+    </div>
+  </section>
+
+  <!-- Project Content -->
+  <section class="py-16">
+    <div class="container mx-auto px-6 max-w-5xl">
+
+      <!-- Scrollable Mockup Box -->
+      <div class="border-4 border-gray-800 rounded-xl overflow-auto shadow-lg mb-12 w-full h-[500px] bg-black">
+        <img src="./images/project 1/project image 1.png" alt="Project 1 Preview" class="w-[1000px] h-auto mx-auto">
+      </div>
+
+      <!-- About the Project -->
+      <h2 class="text-3xl font-semibold mb-6">Overview</h2>
+      <p class="text-lg text-gray-700 mb-8 leading-relaxed">
+        The goal of this project was to enhance user convenience by adding a 
+        <span class="text-[#de0f66] font-medium">message scheduling feature</span> to WhatsApp. 
+        I designed a seamless experience where users can select a future date and time, 
+        write their message, and let the app handle the delivery automatically. 
+      </p>
+
+      <!-- Features -->
+      <h2 class="text-3xl font-semibold mb-6">Key Features</h2>
+      <ul class="list-disc pl-6 text-lg text-gray-700 space-y-3 mb-12">
+        <li>📅 Schedule messages to be sent at a chosen time and date.</li>
+        <li>🔔 Notifications and reminders before scheduled messages are sent.</li>
+        <li>✏️ Edit or cancel scheduled messages easily.</li>
+        <li>🎨 Clean and intuitive UI designed with user flow in mind.</li>
+      </ul>
+
+      <!-- Gallery -->
+      <h2 class="text-3xl font-semibold mb-6">Project Gallery</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+        <img src="./images/project 1/screen1.png" alt="Screen 1" class="rounded-xl shadow-md">
+        <img src="./images/project 1/screen2.png" alt="Screen 2" class="rounded-xl shadow-md">
+        <img src="./images/project 1/screen3.png" alt="Screen 3" class="rounded-xl shadow-md">
+        <img src="./images/project 1/screen4.png" alt="Screen 4" class="rounded-xl shadow-md">
+      </div>
+
+      <!-- Back Button -->
+      <div class="text-center">
+        <a href="index.html#projects" 
+           class="inline-block bg-[#de0f66] text-white font-medium py-3 px-8 rounded-xl shadow-md hover:bg-[#c70d5a] transition">
+          ← Back to Projects
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-10 mt-16">
+    <div class="container mx-auto text-center text-sm">
+      © 2025 MyPortfolio. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+
+</html>
