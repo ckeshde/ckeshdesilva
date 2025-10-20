@@ -4,3 +4,52 @@ colors
 
 #de0f66
 blue-600
+
+
+
+Strucuture
+
+portfolio-website/
+│
+├── index.html
+├── project1.html
+├── project2.html
+├── project3.html
+├── project4.html
+│
+├── components/
+│   └── navbar.html                ← Common navbar file (used across all pages)
+│
+├── css/
+│   ├── style.css                  ← Main custom styles
+│   └── responsive.css             ← (Optional) separate responsive CSS
+│
+├── js/
+│   ├── main.js                    ← For navbar toggle, animations, etc.
+│   └── load-navbar.js             ← For dynamically loading the common navbar
+│
+├── images/
+│   ├── project1/
+│   │   ├── cover-image.png
+│   │   ├── wireframe1.png
+│   │   └── prototype.png
+│   │
+│   ├── project2/
+│   │   ├── cover-image.png
+│   │   ├── ui-snapshot1.png
+│   │   └── mobile-view.png
+│   │
+│   ├── project3/
+│   │   ├── cover-image.png
+│   │   └── final-ui.png
+│   │
+│   ├── project4/
+│   │   ├── cover-image.png
+│   │   └── website-preview.png
+│   │
+│   └── logo.png                   ← Your portfolio logo or favicon
+│
+└── assets/
+    ├── fonts/                     ← (Optional) custom fonts if used
+    └── icons/                     ← (Optional) social media or UI icons
+
