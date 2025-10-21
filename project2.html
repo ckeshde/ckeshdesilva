@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plugpin – EV Charging Station Finder App | Keshani de Silva</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poetsen+One&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navbar -->
+    <div id="navbar-placeholder"></div>
+
+    <script>
+        fetch("components/navbar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar-placeholder").innerHTML = data;
+            });
+    </script>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-4 bg-[#fcebf0] text-center">
+        <div class="container mx-auto px-6">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
+                Plugpin – EV Charging Station Finder App
+            </h1>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-10">
+                A mobile app concept that helps electric vehicle users find nearby charging stations with real-time
+                availability and intuitive navigation.
+            </p>
+            <img src="./images/project 1/sample-cover.png" alt="Plugpin App Preview"
+                class="mx-auto max-h-[450px] object-cover mb-12">
+            <div class="flex flex-wrap justify-center gap-4 mb-4">
+                <a href="#" target="_blank" class="px-6 py-2 border border-[#de0f66] text-[#de0f66] font-semibold rounded-full
+            hover:bg-[#de0f66] hover:text-white transition duration-300">
+                    View Prototype ↗
+                </a>
+                <a href="#" target="_blank" class="px-6 py-2 border border-[#de0f66] text-[#de0f66] font-semibold rounded-full
+            hover:bg-[#de0f66] hover:text-white transition duration-300">
+                    View Brand Guidelines ↗
+                </a>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <h2 class="text-3xl font-semibold mb-6 text-gray-900">Project Overview</h2>
+            <p class="text-lg text-gray-700 mb-8 leading-relaxed">
+                I designed and developed a responsive static website for a newly established pediatric speech
+                pathologist.
+                The client needed a digital presence to promote her services, build credibility, and make it easy for
+                potential clients—primarily parents—to reach out.
+            </p>
+            <p class="text-lg text-gray-700 mb-12 leading-relaxed">
+                The site delivers a professional, approachable feel with a clean layout, soft color palette, and clear
+                calls to
+                action. It’s optimized for both desktop and mobile, ensuring accessibility and trustworthiness across
+                all
+                touchpoints.
+            </p>
+
+            <!-- My Role -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12 text-lg">
+                <div><span class="font-semibold text-gray-800">My Role:</span> UI/UX Designer & Front-end Developer
+                </div>
+                <div><span class="font-semibold text-gray-800">Client:</span> Thomas (Founder of Bento-Ya), on behalf of
+                    pediatric speech pathologist</div>
+            </div>
+
+            <!-- Tools -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12 text-lg">
+                <div><span class="font-semibold text-gray-800">Tools & Stack:</span> Figma / HTML5 / Tailwind CSS</div>
+                <div><span class="font-semibold text-gray-800">Year:</span> 2025</div>
+            </div>
+
+            <!-- Target Audience -->
+            <h2 class="text-3xl font-semibold mb-6 text-gray-900">Target Audience</h2>
+            <p class="text-lg text-gray-700 mb-12 leading-relaxed">
+                Parents of young children seeking trusted, approachable, and professional speech therapy services.
+                The site was designed to make it easy to understand the services offered, view credentials, and quickly
+                get in
+                touch.
+            </p>
+
+            <!-- Key Frontend Features -->
+            <h2 class="text-3xl font-semibold mb-6 text-gray-900">Key Frontend Features</h2>
+            <ul class="list-disc pl-6 text-lg text-gray-700 space-y-4 mb-12">
+                <li><span class="font-semibold text-gray-800">Responsive Design:</span> Built with a mobile-first
+                    approach
+                    using Tailwind CSS for optimal experience across all devices.</li>
+                <li><span class="font-semibold text-gray-800">Semantic HTML Structure:</span> Ensures accessibility and
+                    SEO-friendliness for local search discovery.</li>
+                <li><span class="font-semibold text-gray-800">Modular Utility Classes:</span> Speeds up development and
+                    maintains consistent styling across components.</li>
+                <li><span class="font-semibold text-gray-800">Clear CTA Placement:</span> Strategically placed “Book a
+                    Consultation” and contact buttons to encourage conversions.</li>
+                <li><span class="font-semibold text-gray-800">Optimized Page Load:</span> Lightweight static site with
+                    compressed assets for faster load speeds.</li>
+                <li><span class="font-semibold text-gray-800">Custom Components:</span> Built reusable sections like
+                    Hero,
+                    Services, Testimonials, and Contact for future scalability.</li>
+            </ul>
+
+            <!-- UI Snapshots -->
+            <h2 class="text-3xl font-semibold mb-6 text-gray-900">Design Showcase</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                <img src="./images/project 1/low-fidelity-wireframes.png" alt="Home Page">
+                <img src="./images/project 1/Web-Design.png" alt="Home Page">
+            </div>
+
+            <!-- Challenges & Solutions -->
+            <h2 class="text-3xl font-semibold mb-6 text-gray-900">Challenges & Solutions</h2>
+            <div class="mb-12">
+                <p class="text-lg text-gray-700 mb-4 leading-relaxed">
+                    <span class="font-semibold text-gray-800">Challenge:</span> Competing in a saturated local market
+                    with limited
+                    brand recognition.<br>
+                    <span class="font-semibold text-gray-800">Solution:</span> Emphasized trust-building visuals and
+                    structured
+                    content hierarchy to guide users smoothly toward the CTA.
+                </p>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    <span class="font-semibold text-gray-800">Challenge:</span> Lack of initial brand assets or web
+                    content.<br>
+                    <span class="font-semibold text-gray-800">Solution:</span> Collaborated with the client to create
+                    copy and
+                    select brand-aligned imagery for a cohesive and professional look.
+                </p>
+            </div>
+
+            <!-- Outcome -->
+            <h2 class="text-3xl font-semibold mb-6 text-gray-900">Outcome</h2>
+            <p class="text-lg text-gray-700 mb-12 leading-relaxed">
+                The client now has a modern, conversion-optimized online presence tailored to her niche.
+                Within the first few weeks of launch, the site helped attract inquiries from families who found her
+                services
+                through local search — a significant improvement from having no web presence at all.
+            </p>
+
+            <!-- Back Button -->
+            <div class="text-center">
+                <a href="index.html#projects"
+                    class="inline-block bg-gray-800 text-white font-medium py-3 px-8 rounded-xl shadow-md hover:bg-gray-700 transition">
+                    ← Back to Projects
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-10 mt-16">
+        <div class="container mx-auto text-center text-sm">
+            © 2025 MyPortfolio. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+
+</html>
