@@ -1,118 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>UI Design Collection | Keshani de Silva</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="css/style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Design Collection | Keshani de Silva</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="bg-white text-gray-800">
 
-  <!-- Navbar Placeholder -->
-  <div id="navbar-placeholder"></div>
+    <!-- Navbar Placeholder -->
+    <div id="navbar-placeholder"></div>
 
-  <script>
-    fetch("components/navbar.html")
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById("navbar-placeholder").innerHTML = data;
-      });
-  </script>
+    <script>
+        fetch("components/navbar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar-placeholder").innerHTML = data;
+            });
+    </script>
 
-  <!-- Hero -->
-  <section class="py-20 text-center">
-    <h1 class="text-4xl font-bold mb-4">UI Design Collection</h1>
-    <p class="text-gray-600 max-w-2xl mx-auto">
-      A curated collection of interface designs, visual explorations, and UI concepts.
-    </p>
-  </section>
+    <script>
+        fetch("components/ui-data.json")
+            .then(response => response.json())
+            .then(data => {
+                const grid = document.getElementById("ui-grid");
 
-  <!-- UI Grid -->
-<section class="pb-20">
-  <div class="container mx-auto px-6">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                data.forEach(item => {
+                    const card = `
+          <div class="relative group cursor-pointer" onclick="openModal(this)">
+            <img src="${item.image}" 
+                 alt="${item.title}" 
+                 class="rounded-2xl shadow-lg w-full h-auto transition duration-500 group-hover:scale-[1.02]">
 
-      <!-- UI Item -->
-      <div class="relative group cursor-pointer" onclick="openModal(this)">
-        <img src="./images/project 1/Cover.png" 
-             alt="Dashboard UI" 
-             class="rounded-2xl shadow-lg w-full h-auto transition duration-500 group-hover:scale-[1.02]">
+            <div class="absolute inset-0 bg-black bg-opacity-60 rounded-2xl 
+                        opacity-0 group-hover:opacity-100 transition duration-300
+                        flex flex-col justify-end p-8">
+              <h3 class="text-white text-2xl font-semibold">${item.title}</h3>
+              <p class="text-gray-200 text-base mt-2">
+                ${item.description}
+              </p>
+            </div>
+          </div>
+        `;
 
-        <!-- Hover Overlay -->
-        <div class="absolute inset-0 bg-black bg-opacity-60 rounded-2xl 
-                    opacity-0 group-hover:opacity-100 transition duration-300
-                    flex flex-col justify-end p-8">
-          <h3 class="text-white text-2xl font-semibold">Dashboard UI</h3>
-          <p class="text-gray-200 text-base mt-2">
-            Clean analytics dashboard concept
-          </p>
+                    grid.innerHTML += card;
+                });
+            });
+    </script>
+
+    <!-- Hero -->
+    <section class="py-20 text-center">
+        <h1 class="text-4xl font-bold mb-4">UI Design Collection</h1>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+            A curated collection of interface designs, visual explorations, and UI concepts.
+        </p>
+    </section>
+
+    <!-- UI Grid -->
+    <!-- UI Grid -->
+    <section class="pb-20">
+        <div class="container mx-auto px-6">
+            <div id="ui-grid" class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Images will load here from JSON -->
+            </div>
         </div>
-      </div>
+    </section>
 
-      <!-- UI Item -->
-      <div class="relative group cursor-pointer" onclick="openModal(this)">
-        <img src="./images/project2/Cover.png" 
-             alt="Mobile App UI" 
-             class="rounded-2xl shadow-lg w-full h-auto transition duration-500 group-hover:scale-[1.02]">
-
-        <!-- Hover Overlay -->
-        <div class="absolute inset-0 bg-black bg-opacity-60 rounded-2xl 
-                    opacity-0 group-hover:opacity-100 transition duration-300
-                    flex flex-col justify-end p-8">
-          <h3 class="text-white text-2xl font-semibold">Mobile App UI</h3>
-          <p class="text-gray-200 text-base mt-2">
-            Modern resume builder app screen
-          </p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-  <!-- Modal -->
-  <div id="imageModal" 
-       class="fixed inset-0 bg-black bg-opacity-80 hidden 
+    <!-- Modal -->
+    <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-80 hidden 
               items-center justify-center p-6 z-50">
 
-    <div class="relative max-w-4xl w-full">
-      <button onclick="closeModal()" 
-              class="absolute -top-12 right-0 text-white text-3xl">
-        &times;
-      </button>
+        <div class="relative max-w-4xl w-full">
+            <button onclick="closeModal()" class="absolute -top-12 right-0 text-white text-3xl">
+                &times;
+            </button>
 
-      <img id="modalImage" 
-           class="rounded-xl w-full max-h-[85vh] object-contain bg-white p-4">
+            <img id="modalImage" class="rounded-xl w-full max-h-[85vh] object-contain bg-white p-4">
+        </div>
     </div>
-  </div>
 
-  <!-- Modal Script -->
-  <script>
-    function openModal(element) {
-      const img = element.querySelector("img");
-      const modal = document.getElementById("imageModal");
-      const modalImg = document.getElementById("modalImage");
+    <!-- Modal Script -->
+    <script>
+        function openModal(element) {
+            const img = element.querySelector("img");
+            const modal = document.getElementById("imageModal");
+            const modalImg = document.getElementById("modalImage");
 
-      modalImg.src = img.src;
-      modal.classList.remove("hidden");
-      modal.classList.add("flex");
-    }
+            modalImg.src = img.src;
+            modal.classList.remove("hidden");
+            modal.classList.add("flex");
+        }
 
-    function closeModal() {
-      const modal = document.getElementById("imageModal");
-      modal.classList.add("hidden");
-      modal.classList.remove("flex");
-    }
+        function closeModal() {
+            const modal = document.getElementById("imageModal");
+            modal.classList.add("hidden");
+            modal.classList.remove("flex");
+        }
 
-    // Close modal when clicking outside image
-    document.getElementById("imageModal").addEventListener("click", function(e) {
-      if (e.target === this) {
-        closeModal();
-      }
-    });
-  </script>
+        // Close modal when clicking outside image
+        document.getElementById("imageModal").addEventListener("click", function (e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+    </script>
 
 </body>
+
 </html>
