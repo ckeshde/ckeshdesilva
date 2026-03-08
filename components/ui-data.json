@@ -1,42 +1,42 @@
 [
   {
     "image": "./images/ui_collection/game_store.png",
-    "title": "Dashboard UI",
-    "description": "Clean analytics dashboard concept"
+    "title": "Game Store App UI",
+    "description": "Mobile app for discovering and purchasing games"
   },
   {
     "image": "./images/ui_collection/shoesphere.png",
-    "title": "Mobile App UI",
-    "description": "Modern resume builder app screen"
+    "title": "Shoe Store Finder App UI",
+    "description": "Modern interface for finding and exploring shoe stores"
   },
   {
     "image": "./images/ui_collection/play_and_blossom.png",
-    "title": "Dashboard UI",
-    "description": "Clean analytics dashboard concept"
+    "title": "Pediatric Speech Pathology Service Website",
+    "description": "Clean and friendly website for a pediatric speech therapy service"
   },
   {
     "image": "./images/ui_collection/cresuma.png",
-    "title": "Mobile App UI",
-    "description": "Modern resume builder app screen"
+    "title": "Resume Builder Web App UI",
+    "description": "Modern web app design for building resumes easily"
   },
   {
     "image": "./images/ui_collection/plugpin.png",
-    "title": "Mobile App UI",
-    "description": "Modern resume builder app screen"
+    "title": "EV Charging Station Finder App",
+    "description": "Clean mobile app UI for finding nearby EV charging stations"
   },
   {
     "image": "./images/ui_collection/carkey_compatibility_checker.png",
-    "title": "Mobile App UI",
-    "description": "Modern resume builder app screen"
+    "title": "Apple CarKey Compatibility Checker App",
+    "description": "Quick tool for checking Apple CarKey vehicle compatibility"
   },
   {
     "image": "./images/ui_collection/oecsl.png",
-    "title": "Mobile App UI",
-    "description": "Modern resume builder app screen"
+    "title": "Entrepreneur Club Community Website",
+    "description": "Community platform for entrepreneurs to connect and collaborate"
   },
-   {
+  {
     "image": "./images/ui_collection/hiking_buddy.png",
-    "title": "Mobile App UI",
-    "description": "Modern resume builder app screen"
+    "title": "Hiking Community Website",
+    "description": "Community website for hikers to connect and share experiences"
   }
 ]
