@@ -1,0 +1,23 @@
+[
+    {
+        "link": "project1.html",
+        "type": "WEBSITE",
+        "title": "Play & Blossom Website Design",
+        "description": "Static website design and development for a pediatric speech pathology service, delivering a clean, professional, and user-friendly online presence.",
+        "image": "./images/project 1/Cover.png"
+    },
+    {
+        "link": "project2.html",
+        "type": "BRANDING",
+        "title": "Plugpin - EV Charging Finder App",
+        "description": "Mobile app design with brand guidelines for an EV charging station finder app, featuring intuitive navigation and consistent visual identity.",
+        "image": "./images/project2/Cover.png"
+    },
+    {
+        "link": "project3.html",
+        "type": "REDESIGN",
+        "title": "Website Redesign for Resume Builder Web App",
+        "description": "Redesigned a web application for building resumes and related tools, focusing on improved usability, modern interface, and seamless user experience.",
+        "image": "./images/project3/Cover.png"
+    }
+]
