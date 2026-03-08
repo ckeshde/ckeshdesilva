@@ -6,22 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UI Design Collection | Keshani de Silva</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poetsen+One&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
-<body class="bg-white text-gray-800">
+<body class="bg-gray-50 text-gray-800">
 
-    <!-- Navbar Placeholder -->
     <div id="navbar-placeholder"></div>
 
+    <!-- Navbar -->
     <script>
         fetch("components/navbar.html")
             .then(response => response.text())
             .then(data => {
                 document.getElementById("navbar-placeholder").innerHTML = data;
+
+                // --- Mobile menu toggle ---
+                const btn = document.getElementById('menu-btn');
+                const menu = document.getElementById('menu');
+
+                if (btn && menu) {
+                    btn.addEventListener('click', () => {
+                        menu.classList.toggle('hidden');
+                    });
+
+                    // Optional: close menu when a link is clicked
+                    const links = document.querySelectorAll('.mobile-link');
+                    links.forEach(link => {
+                        link.addEventListener('click', () => {
+                            menu.classList.add('hidden');
+                        });
+                    });
+                }
             });
     </script>
 
+    <!-- Card -->
     <script>
         fetch("components/ui-data.json")
             .then(response => response.json())
@@ -30,21 +55,27 @@
 
                 data.forEach(item => {
                     const card = `
-          <div class="relative group cursor-pointer" onclick="openModal(this)">
-            <img src="${item.image}" 
-                 alt="${item.title}" 
-                 class="rounded-2xl shadow-lg w-full h-auto transition duration-500 group-hover:scale-[1.02]">
+                        <div class="relative group cursor-pointer" onclick="openModal(this)">
+                            
+                            <!-- Fixed Size Card -->
+                            <div class="w-full h-[420px] overflow-hidden rounded-xl shadow-lg">
+                            <img src="${item.image}" 
+                                alt="${item.title}" 
+                                class="w-full h-full object-cover object-top transition duration-500 group-hover:scale-105">
+                            </div>
 
-            <div class="absolute inset-0 bg-black bg-opacity-60 rounded-2xl 
-                        opacity-0 group-hover:opacity-100 transition duration-300
-                        flex flex-col justify-end p-8">
-              <h3 class="text-white text-2xl font-semibold">${item.title}</h3>
-              <p class="text-gray-200 text-base mt-2">
-                ${item.description}
-              </p>
-            </div>
-          </div>
-        `;
+                            <!-- Hover Overlay -->
+                            <div class="absolute inset-0 bg-black bg-opacity-60 rounded-xl 
+                                        opacity-0 group-hover:opacity-100 transition duration-300
+                                        flex flex-col justify-end p-8">
+                            <h3 class="text-white text-2xl font-semibold">${item.title}</h3>
+                            <p class="text-gray-200 text-base mt-2">
+                                ${item.description}
+                            </p>
+                            </div>
+
+                        </div>
+                        `;
 
                     grid.innerHTML += card;
                 });
@@ -55,11 +86,10 @@
     <section class="py-20 text-center">
         <h1 class="text-4xl font-bold mb-4">UI Design Collection</h1>
         <p class="text-gray-600 max-w-2xl mx-auto">
-            A curated collection of interface designs, visual explorations, and UI concepts.
+           A showcase of creative interface designs, visual ideas, and modern UI concepts.
         </p>
     </section>
 
-    <!-- UI Grid -->
     <!-- UI Grid -->
     <section class="pb-20">
         <div class="container mx-auto px-6">
@@ -73,12 +103,12 @@
     <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-80 hidden 
               items-center justify-center p-6 z-50">
 
-        <div class="relative max-w-4xl w-full">
+        <div class="relative max-w-6xl w-full max-h-[90vh] overflow-y-auto">
             <button onclick="closeModal()" class="absolute -top-12 right-0 text-white text-3xl">
                 &times;
             </button>
 
-            <img id="modalImage" class="rounded-xl w-full max-h-[85vh] object-contain bg-white p-4">
+            <img id="modalImage" class="rounded-xl w-full object-contain bg-white p-4">
         </div>
     </div>
 
@@ -108,6 +138,12 @@
         });
     </script>
 
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-10 mt-16">
+        <div class="container mx-auto text-center text-sm">
+            © 2026 ckeshdesilva. All rights reserved.
+        </div>
+    </footer>
 </body>
 
 </html>

@@ -5,7 +5,17 @@
     "description": "Clean analytics dashboard concept"
   },
   {
-    "image": "./images/project2/Cover.png",
+    "image": "./images/project2/Guidelines.png",
+    "title": "Mobile App UI",
+    "description": "Modern resume builder app screen"
+  },
+    {
+    "image": "./images/project 1/Cover.png",
+    "title": "Dashboard UI",
+    "description": "Clean analytics dashboard concept"
+  },
+  {
+    "image": "./images/project2/Guidelines.png",
     "title": "Mobile App UI",
     "description": "Modern resume builder app screen"
   }
