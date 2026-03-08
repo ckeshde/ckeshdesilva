@@ -1,21 +1,41 @@
 [
   {
-    "image": "./images/project 1/Cover.png",
+    "image": "./images/ui_collection/game_store.png",
     "title": "Dashboard UI",
     "description": "Clean analytics dashboard concept"
   },
   {
-    "image": "./images/project2/Guidelines.png",
+    "image": "./images/ui_collection/shoesphere.png",
     "title": "Mobile App UI",
     "description": "Modern resume builder app screen"
   },
-    {
-    "image": "./images/project 1/Cover.png",
+  {
+    "image": "./images/ui_collection/play_and_blossom.png",
     "title": "Dashboard UI",
     "description": "Clean analytics dashboard concept"
   },
   {
-    "image": "./images/project2/Guidelines.png",
+    "image": "./images/ui_collection/cresuma.png",
+    "title": "Mobile App UI",
+    "description": "Modern resume builder app screen"
+  },
+  {
+    "image": "./images/ui_collection/plugpin.png",
+    "title": "Mobile App UI",
+    "description": "Modern resume builder app screen"
+  },
+  {
+    "image": "./images/ui_collection/carkey_compatibility_checker.png",
+    "title": "Mobile App UI",
+    "description": "Modern resume builder app screen"
+  },
+  {
+    "image": "./images/ui_collection/oecsl.png",
+    "title": "Mobile App UI",
+    "description": "Modern resume builder app screen"
+  },
+   {
+    "image": "./images/ui_collection/hiking_buddy.png",
     "title": "Mobile App UI",
     "description": "Modern resume builder app screen"
   }
